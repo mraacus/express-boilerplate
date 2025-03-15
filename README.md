@@ -1,15 +1,12 @@
-# ease-server
+# An Express Boilerplate for Typescript
+Authored by Marcus Ong
 
-To install dependencies:
-
+## Installing Dependencies:
 ```bash
 bun install
 ```
 
-To run:
-
+## Running the Server:
 ```bash
-bun run index.js
+bun dev
 ```
-
-This project was created using `bun init` in bun v1.2.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
