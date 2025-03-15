@@ -1,5 +1,5 @@
 # An Express Boilerplate for Typescript
-by Marcus Ong
+Authored by Marcus Ong
 
 ## Installing Dependencies:
 ```bash
