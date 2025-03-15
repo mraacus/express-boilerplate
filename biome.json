@@ -1,0 +1,53 @@
+{
+    "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+    "vcs": {
+        "enabled": false,
+        "clientKind": "git",
+        "useIgnoreFile": false
+    },
+    "files": { "ignore": [] },
+    "organizeImports": { "enabled": true },
+    "formatter": {
+        "lineWidth": 100,
+        "indentStyle": "space",
+        "indentWidth": 4,
+        "enabled": true,
+        "ignore": ["**/tsconfig.*.json"]
+    },
+    "linter": {
+        "enabled": true,
+        "rules": {
+            "recommended": true,
+            "a11y": { "noSvgWithoutTitle": "off", "useGenericFontNames": "off" },
+            "complexity": { "useArrowFunction": "off" },
+            "style": {
+                "noNonNullAssertion": "off",
+                "useBlockStatements": "off",
+                "useNodejsImportProtocol": "info"
+            },
+            "correctness": {
+                "noUnusedImports": "error",
+                "noUnusedVariables": "error"
+            },
+            "security": {
+                "noDangerouslySetInnerHtml": "info"
+            }
+        },
+        "ignore": ["**/tsconfig.*.json"]
+    },
+    "javascript": {
+        "formatter": {
+            "semicolons": "asNeeded",
+            "trailingCommas": "all",
+            "arrowParentheses": "asNeeded",
+            "quoteStyle": "single"
+        }
+    },
+    "overrides": [
+        {
+            "include": ["*.yml*", "*.yaml"],
+            "javascript": { "formatter": { "quoteStyle": "double" } },
+            "formatter": { "indentWidth": 2 }
+        }
+    ]
+}
